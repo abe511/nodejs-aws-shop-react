@@ -1,6 +1,25 @@
 # Task 02
 
-- [S3 Website](https://task02-nodejs-aws-shop-react.s3.eu-west-1.amazonaws.com/index.html)
+- [S3 website](https://task02-nodejs-aws-shop-react.s3.eu-west-1.amazonaws.com/index.html)
+
+- [CloudFront distribution](https://d1f2kbuuvtuxi7.cloudfront.net)
+
+Bucket policy
+```json
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "PublicRead",
+            "Effect": "Allow",
+            "Principal": "*",
+            "Action": "s3:GetObject",
+            "Resource": "arn:aws:s3:::task02-nodejs-aws-shop-react/*"
+        }
+    ]
+}
+```
+
 
 
 
