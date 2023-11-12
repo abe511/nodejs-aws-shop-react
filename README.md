@@ -20,6 +20,8 @@ Bucket policy
 }
 ```
 
+CloudFront invalidation added to all files: `/*`
+
 
 
 
