@@ -1,3 +1,11 @@
+# Task 02
+
+- [S3 Website](https://task02-nodejs-aws-shop-react.s3.eu-west-1.amazonaws.com/index.html)
+
+
+
+
+
 # React-shop-cloudfront
 
 This is frontend starter project for nodejs-aws mentoring program. It uses the following technologies:
