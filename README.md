@@ -1,3 +1,50 @@
+# Task 02
+
+### Task 2.1
+- [S3 website](https://task02-nodejs-aws-shop-react.s3.eu-west-1.amazonaws.com/index.html)
+
+- [CloudFront distribution](https://d1f2kbuuvtuxi7.cloudfront.net)
+
+Bucket policy
+```json
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "PublicRead",
+            "Effect": "Allow",
+            "Principal": "*",
+            "Action": "s3:GetObject",
+            "Resource": "arn:aws:s3:::task02-nodejs-aws-shop-react/*"
+        }
+    ]
+}
+```
+
+- CloudFront invalidation added to all files: `/*`
+
+
+### Task 2.2
+
+- CDK
+
+rename `.env.example` to `.env` and add these values:
+
+
+CDK_DEFAULT_ACCOUNT=\
+CDK_DEFAULT_REGION=\
+S3_BUCKET_NAME=\
+DISTRIBUTION_ID=
+
+- Run CDK commands
+
+`cdk deploy` to create resources
+
+`cdk destroy` to remove resources
+
+
+
+
 # React-shop-cloudfront
 
 This is frontend starter project for nodejs-aws mentoring program. It uses the following technologies:
