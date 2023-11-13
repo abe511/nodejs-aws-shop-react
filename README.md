@@ -1,5 +1,6 @@
 # Task 02
 
+### Task 2.1
 - [S3 website](https://task02-nodejs-aws-shop-react.s3.eu-west-1.amazonaws.com/index.html)
 
 - [CloudFront distribution](https://d1f2kbuuvtuxi7.cloudfront.net)
@@ -20,9 +21,26 @@ Bucket policy
 }
 ```
 
-CloudFront invalidation added to all files: `/*`
+- CloudFront invalidation added to all files: `/*`
 
 
+### Task 2.2
+
+- CDK
+
+rename `.env.example` to `.env` and add these values:
+
+
+CDK_DEFAULT_ACCOUNT=\
+CDK_DEFAULT_REGION=\
+S3_BUCKET_NAME=\
+DISTRIBUTION_ID=
+
+- Run CDK commands
+
+`cdk deploy` to create resources
+
+`cdk destroy` to remove resources
 
 
 
