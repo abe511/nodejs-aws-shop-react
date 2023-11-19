@@ -1,3 +1,12 @@
+# Task 03
+
+### Task 3git .1
+- [S3 website](https://task02-nodejs-aws-shop-react.s3.eu-west-1.amazonaws.com/index.html)
+
+- [CloudFront distribution](https://d1f2kbuuvtuxi7.cloudfront.net)
+
+
+
 # React-shop-cloudfront
 
 This is frontend starter project for nodejs-aws mentoring program. It uses the following technologies:
